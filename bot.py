@@ -96,13 +96,13 @@ sleep(10)
 emailInput = WebDriverWait(driver, 10).until(
     EC.element_to_be_clickable((By.ID, "id_login"))
 )
-emailInput.send_keys("aura.2758.08@gmail.com")
+emailInput.send_keys("Email")
 
 # Wait for password input to be clickable and enter password
 passwordInput = WebDriverWait(driver, 10).until(
     EC.element_to_be_clickable((By.ID, "id_password"))
 )
-passwordInput.send_keys("15081947gG29082004")
+passwordInput.send_keys("Password")
 
 # Wait for login button to be clickable and click on it
 logInButton = WebDriverWait(driver, 10).until(
